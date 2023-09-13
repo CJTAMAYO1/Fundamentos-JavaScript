@@ -3,23 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora js</title>
+    <title>Calculadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: beige;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .calculator {
+            margin: 0 auto;
+            width: 300px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        button {
+            width: 48px;
+            height: 48px;
+            font-size: 18px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #clear {
+            background-color: #ff5050;
+            color: #fff;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
-    <div Class="container">
-        <h1>Calculadora</h1>
-        <input type="text" name="" id="num1">
+    <h1>Calculadora</h1>
+    <div class="calculator">
+        <input type="text" id="num1" placeholder="Número 1">
         <br>
-        <input type="text" name="" id="num2">
+        <input type="text" id="num2" placeholder="Número 2">
         <br>
-        <input type="text" name="" id="result">
+        <input type="text" id="result" placeholder="resultado" disabled>
         <br>
-        <button oneclick ="sumar()">Sumar</button>
-        <button oneclick ="restar()">restar</button>
-        <button oneclick ="multiplicar()">multiplicar</button>
-        <button oneclick ="dividir()">dividir</button>
-        <button oneclick ="limpiar()">limpiar</button>
+        
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <br>
+        <button id="clear" onclick="clearDisplay()">C</button>
+        <button onclick="calculate()">=</button>
     </div>
+
     <script src="./calculadora.js"></script>
+
 </body>
 </html>
