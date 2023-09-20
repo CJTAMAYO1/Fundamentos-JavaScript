@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Treas con Javascript</title>
+
+    <style>
+        body{
+            background-color: beige;
+        }
+        .container {
+
+            text-align: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de tareas con Javascript</h1>
+        <div id="formulario">
+            <h2>Ingresa tarea</h2>
+            <textarea name="" id="inputTarea" cols="50" rows="5"></textarea>
+            <h2>Hora</h2>
+            <input type="time" name="" id="tiempo">
+            <br>
+            <button onclick="addTarea()">Agregar Tarea</button>
+        </div>
+        <div id="tareas">
+            <h2>Tareas</h2>
+            <ul></ul>
+        </div>
+    </div>
+    <script src="./tareas.js"></script>
+</body>
+</html>
