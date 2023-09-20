@@ -41,3 +41,4 @@ for (const letra of letras){
 for (const numero of numeros){
     console.log(numero);
 }
+

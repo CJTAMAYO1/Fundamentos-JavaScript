@@ -85,3 +85,4 @@ console.log(numeros.some(numero=>numero >8 ));
 //every
 console.log(numeros.every(numero=>numero >6 ));
 console.log(numeros.every(numero=>numero >8 ));
+
