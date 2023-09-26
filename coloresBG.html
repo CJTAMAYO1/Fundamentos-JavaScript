@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Color</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            width: 400px;
+            height: 250px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+        .container button{
+            height: 100px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        .container button:hover{
+            background-color: #45a049;
+        }
+        .container button:active{
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Colores Background</h1>
+        <h2></h2>
+        <button onclick="setColor()">Picale y veras como cambia el fondo(a veces tarda xd)</button>
+    </div>
+    <script src="./coloresBG.js"></script>
+</body>
+</html>
